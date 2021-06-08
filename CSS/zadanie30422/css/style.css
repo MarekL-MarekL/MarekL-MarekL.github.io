@@ -1,0 +1,26 @@
+.container1{
+    height: 400px;
+    width: 400px;
+    background-color: #a6a9b6;
+    border: 10px solid #666360;
+    position: relative;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    position:absolute;
+
+}
+
+.dwa{
+    background-color: #e4e4e4;
+    right: 0;
+    top:0;
+}
+
+.trzy{
+    background-color:#ff912e;
+    left: 0;
+    bottom: 0;
+}
