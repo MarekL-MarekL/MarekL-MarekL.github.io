@@ -1,0 +1,37 @@
+.box{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 2s linear;
+  
+    
+}
+.jeden{
+    background-color: red;
+}
+
+.dwa{
+    background-color: blue;}
+
+.trzy{
+    background-color: green;
+}
+
+.jeden:hover{
+    width: 300px;
+
+}
+.dwa:hover{
+    height: 300px;
+}
+
+.trzy:hover{
+    width: 300px;
+    height: 300px;
+
+
+}
+
+

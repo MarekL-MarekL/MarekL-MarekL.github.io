@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-formularz-html5</title>
+</head>
+<body>
+
+    <form action="https://formspree.io/f/mvodkwjk" method="POST">
+
+
+    <label>Imie:
+        <input type="text" name="imie" placeholder="Jan" required>
+    </label>
+    <br><br>
+
+    <label>Nazwisko:
+        <input type="text" name="nazwisko"  placeholder="Nowak" required>
+    </label>
+    <br><br>
+
+    <label>Email:
+        <input type="email" name="email"  placeholder="jannowak@gmail.com" required>
+    </label>
+    <br><br>
+
+    <label>Telefon:
+        <input type="tel" name="tel"  placeholder="111-222-333" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"  required>
+    </label>
+    <br><br>
+    
+    <label>Wybor miasta:
+        <select name="city" required>
+            <option value="">None</option>
+            <option value="Krakow">Krakow</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Krakow">Gdansk</option>
+        </select>
+    </label>
+    <br><br>
+
+  
+    <label>Wybierz plec:
+        <input type="radio" name="gender" value="mezczyzna" required> mezczyzna
+    </label>
+    <label>
+        <input type="radio" name="gender" value="kobieta">kobieta
+    </label>
+    <br><br>
+
+
+    <label>
+        <input type="checkbox" name="umowa" required>Zgoda na przetwarzanie danych osobowych
+    </label>
+    <br><br>
+
+
+    <textarea name="message" maxlength="100" rows="5" cols="50">Wpisz swoja wiadomosc</textarea>
+    <br><br>
+    <input type="submit" value="wyslij">
+
+</form>
+
+    
+</body>
+</html>
