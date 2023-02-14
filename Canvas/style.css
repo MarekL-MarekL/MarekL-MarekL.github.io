@@ -1,0 +1,67 @@
+
+#game{
+    width: 100%;
+    text-align: center;
+    display: inline;
+}
+#center{
+    border: 1px solid black;
+    text-align: center;  
+    width: 600px; 
+    height: 100px;
+
+}
+
+#buttons,
+#score,
+#speed{
+display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-right:40px ;
+    }
+
+
+
+#btn-speed{
+    
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+   
+}
+button{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+button:hover{
+    background-color:rgb(46, 40, 40);
+    color: white;
+
+
+}
+#speedup:hover{
+    background-color: red;
+
+}
+
+#slowdown:hover{
+    background-color: grey;
+}
+
+    
+
+
+
+
+
+
+
+#canvas{
+    border-style: solid;
+    border-color: aqua;
+
+}
