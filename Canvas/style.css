@@ -5,7 +5,7 @@
     display: inline;
 }
 #center{
-    border: 1px solid black;
+   
     text-align: center;  
     width: 600px; 
     height: 100px;
@@ -16,7 +16,7 @@
 #score,
 #speed{
 display: inline-block;
-  border: 1px solid red;
+ 
   padding: 1rem 1rem;
   vertical-align: middle;
   text-align: center;
@@ -28,7 +28,7 @@ display: inline-block;
 #btn-speed{
     
     display: flex;
-    /* justify-content: center; */
+
     flex-direction: column;
    
 }
@@ -49,7 +49,7 @@ button:hover{
 }
 
 #slowdown:hover{
-    background-color: grey;
+    background-color: green;
 }
 
     
