@@ -56,18 +56,17 @@ window.onload = function() {
 
         context.font="20px Arial";
         context.fillStyle="black";
-        // context.fillText("Score:"+score,10,20);
         yourscore.innerText="Score: "+score;
     
         
         context.beginPath();
         context.rect(x,y,100,100);
-        context.fillStyle="red";
+        context.fillStyle="black";
         context.fill();
 
         context.beginPath();
         context.rect(coinx,coiny,50,50);
-        context.fillStyle="orange";
+        context.fillStyle="green";
         context.fill();
 
         if (dir==1) {
