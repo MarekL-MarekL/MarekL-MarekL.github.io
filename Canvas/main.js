@@ -123,8 +123,7 @@ window.onload = function() {
 
         window.requestAnimationFrame(draw);
         
-            
-        }
+                }
 
 
     
