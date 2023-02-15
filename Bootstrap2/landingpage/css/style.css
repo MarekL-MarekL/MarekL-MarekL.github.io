@@ -1,0 +1,53 @@
+.spacja{
+    margin-top: 30px;
+  
+}
+.services{
+    margin-bottom: 20px;
+}
+
+.showcase-img{
+    background-size:cover;
+    background-position: center;
+}
+
+.showcase-text{
+    padding: 50px;
+}
+.showcase-img{
+    height: 300px;
+}
+
+.team-item{
+    max-width: 200px;
+}
+.call-to-action{
+    background-image: url(/img/slider-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+
+section,
+footer{
+    padding: 60px 0;
+
+}
+@media(max-width: 768px){
+    .spacja,
+    .team-item-last 
+    {
+        margin-bottom: 50px;
+        
+
+    }
+    .spacja-lastchild{
+        margin: 0;
+    }
+    .showcase-img{
+        height: 300px;
+    }
+  
+}
+
