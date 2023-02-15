@@ -117,10 +117,8 @@ window.onload = function() {
             speed=speed-20;
             console.log(speed);
         }
-
-       
       
-        
+             
    
 
         window.requestAnimationFrame(draw);

@@ -20,7 +20,6 @@
   margin-right:40px ;
     }
 
-
 #btn-speed{    
     display: flex;
     flex-direction: column;   
@@ -43,14 +42,7 @@ button:hover{
 
 #slowdown:hover{
     background-color: grey;
-}
-
-    
-
-
-
-
-
+} 
 
 
 #canvas{
