@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=
+	
+	, initial-scale=1.0">
+	<title>Bill spliter</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div id="centered-div">
+		<div class="billspliter">
+			<h1>BILL SPLITER</h1>
+			<h3>Share bill with your friends</h3>
+		</div>
+
+		<div class="form">
+			<label for="amount">
+
+				Amount to pay:
+
+
+			</label>
+			<input type="text" id="amount" placeholder="">
+
+			<label for="numberofpeople">Number of people:</label>
+			<input type="text" id="numberofpeople" placeholder="">
+
+			<label for="tips">Tips:</label>
+			<input type="number" id="tips" placeholder="" step="1">
+		</div>
+
+		<button id="btn">Calulate</button>
+		<p id="error"></p>
+		<div id="pay">You should pay: <b id="result"></b> </h4>
+		</div>
+	</div>
+
+
+
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
