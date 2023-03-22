@@ -6,11 +6,8 @@ const sendBtn = document.querySelector(".send");
 const clearBtn = document.querySelector(".clear");
 const popup = document.querySelector(".popup");
 
-// console.log(clearBtn);
-
 const showError = (marek, msg) => {
 	const formbox = marek.parentElement;
-	// console.log(formbox);
 	const errorMsg = formbox.querySelector(".error-text");
 	formbox.classList.add("error");
 	errorMsg.textContent = msg;
@@ -24,7 +21,6 @@ const clearError = (input) => {
 const checkform = (input) => {
 	input.forEach((el) => {
 		if (el.value === "") {
-			// console.log(el);
 			showError(el, el.placeholder);
 		} else {
 			clearError(el);
@@ -34,7 +30,6 @@ const checkform = (input) => {
 
 const checkLength = (lukasz, min) => {
 	if (lukasz.value.length < min) {
-		// console.log(lukasz.value.length);
 		showError(
 			lukasz,
 			`${lukasz.previousElementSibling.innerText.replace(
