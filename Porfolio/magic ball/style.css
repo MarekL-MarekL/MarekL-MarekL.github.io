@@ -25,7 +25,7 @@ body {
 	flex-direction: column;
 	width: 1000px;
 	height: 1000px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .info {
@@ -79,22 +79,24 @@ body {
 	border: 2px solid #333;
 	border-radius: 8px;
 }
-/* .btn {
-	visibility: hidden;
-} */
 .btn {
+	visibility: hidden;
+}
+.btn2 {
 	background-color: white;
+	visibility: visible;
 	width: 200px;
 	height: 40px;
 	border-radius: 5px;
 	font-size: 20px;
 	font-weight: bold;
-	/* margin-top: 30px; */
+	margin-top: 40px;
 }
-/* .btn:hover {
+
+.btn:hover {
 	background-color: bisque;
 	cursor: pointer;
-} */
+}
 .answer {
 	margin-top: 20px;
 	visibility: hidden;
@@ -107,6 +109,7 @@ body {
 	margin-top: 20px;
 	visibility: visible;
 	text-align: center;
+	font-size: 30px;
 }
 
 /* .question-area .answer {
