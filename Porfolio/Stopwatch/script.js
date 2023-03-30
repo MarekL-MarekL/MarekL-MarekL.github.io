@@ -6,6 +6,16 @@ const time = document.querySelector(".time");
 const resetBtn = document.querySelector(".reset");
 const timeList = document.querySelector(".time-list");
 const historyBtn = document.querySelector(".history");
+const infoBtn = document.querySelector(".fa-question");
+const modalBtn = document.querySelector(".modal-shadow");
+const closeBtn = document.querySelector(".close");
+const modalshadow = document.querySelector(".modal-shadow");
+const onecolor = document.querySelector(".one");
+const twocolor = document.querySelector(".two");
+const threecolor = document.querySelector(".three");
+const fourcolor = document.querySelector(".four");
+const colorBtn = document.querySelector(".fa-paint-roller");
+const colorPanel = document.querySelector(".colors");
 
 let countTime;
 
@@ -60,13 +70,9 @@ const clearStaff = () => {
 	timeList.textContent = "";
 	minutes = 0;
 	seconds = 0;
-	// console.log(stopwatch.textContent);
 };
 
 const handleHistory = () => {
-	// console.log("dziala");
-	// console.log(timeList.textContent);
-	// console.log(timeList);
 	timeList.textContent = "";
 	let num = 1;
 	resultArr.forEach((time) => {
@@ -78,90 +84,58 @@ const handleHistory = () => {
 	});
 };
 
+const handleModal = () => {
+	if (modalBtn.style.display !== "block") {
+		modalBtn.style.display = "block";
+	} else {
+		modalBtn.style.display = "none";
+	}
+	modalshadow.classList.toggle("modal-animation");
+};
+
 startBtn.addEventListener("click", handleStart);
 pauseBtn.addEventListener("click", handlePause);
 stopBtn.addEventListener("click", handleStop);
 resetBtn.addEventListener("click", handleReset);
 historyBtn.addEventListener("click", handleHistory);
+infoBtn.addEventListener("click", handleModal);
+closeBtn.addEventListener("click", handleModal);
+window.addEventListener("click", (e) =>
+	e.target === modalshadow ? handleModal() : false
+);
 
-// const ball = document.querySelector(".image");
-// const question = document.querySelector(".question");
-// const answer = document.querySelector(".answer");
-// const error = document.querySelector(".error");
-// const btn = document.querySelector(".btn");
-// const btn2 = document.querySelector(".btn2");
+colorBtn.addEventListener("click", () => {
+	colorPanel.classList.toggle("show-colors");
+});
 
-// const animation = () => {
-// 	// const ballanimation = ball;
-// 	ball.classList.add("shake-animaton");
-// };
-// const randomText = () => {
-// 	const randomIndex = Math.floor(Math.random() * randomAnswer.length);
+onecolor.addEventListener("click", () => {
+	document.documentElement.style.setProperty("--first-color", "red");
+	document.documentElement.style.setProperty(
+		"--third-color",
+		"rgb(241, 73, 73)"
+	);
+});
 
-// 	answer.innerText = randomAnswer[randomIndex];
-// };
+twocolor.addEventListener("click", () => {
+	document.documentElement.style.setProperty("--first-color", "blue");
+	document.documentElement.style.setProperty(
+		"--third-color",
+		"rgb(52, 52, 242)"
+	);
+});
 
-// const randomAnswer = [
-// 	"It is certain",
-// 	"It is decidedly so",
-// 	"Without a doubt",
-// 	"Yes, definitely",
-// 	"You may rely on it",
-// 	"As I see it, yes",
-// 	"Most likely",
-// 	"Outlook good",
-// 	"Yes",
-// 	"Signs point to yes",
-// 	"Reply hazy try again",
-// 	"Ask again later",
-// 	"Better not tell you now",
-// 	"Cannot predict now",
-// 	"Concentrate and ask again",
-// 	"Don't count on it",
-// 	"My reply is no",
-// 	"My sources say no",
-// 	"Outlook not so good",
-// 	"Very doubtful",
-// ];
+threecolor.addEventListener("click", () => {
+	document.documentElement.style.setProperty("--first-color", "green");
+	document.documentElement.style.setProperty(
+		"--third-color",
+		"rgb(64, 163, 64)"
+	);
+});
 
-// const checkQuestion = () => {
-// 	const re = /^\s*(?:\w+\b\s+){2,}\w+\b\s*\?$/;
-
-// 	if (re.test(question.value)) {
-// 		animation();
-// 		error.classList.remove("error2");
-
-// 		setTimeout(function () {
-// 			// answer.classList.add("answer2");
-// 			answer.classList.add("answer2");
-// 			// btn.classList.add("btn2");
-// 			// answer.innerText = randomText;
-// 			// addbtn();
-// 			randomText();
-// 		}, 1500);
-
-// 		setTimeout(function () {
-// 			// answer.classList.add("answer2");
-// 			btn.classList.add("btn2");
-// 		}, 3000);
-// 	} else {
-// 		error.classList.add("error2");
-// 		error.innerText =
-// 			"You did not ask a question with at least three words, don't forget aboust question mark";
-// 		// console.log(
-// 		// 	"You did not ask a question with at least three words, don't forget aboust question mark"
-// 		// );
-// 	}
-// };
-
-// ball.addEventListener("click", () => {
-// 	checkQuestion();
-// 	// animation();
-// });
-
-// btn.addEventListener("click", () => {
-// 	btn.classList.remove("btn2");
-// 	answer.classList.remove("answer2");
-// 	question.value = "";
-// 	ball.classList.remove("shake-animaton");
-// });
+fourcolor.addEventListener("click", () => {
+	document.documentElement.style.setProperty("--first-color", "purple");
+	document.documentElement.style.setProperty(
+		"--third-color",
+		"rgb(146, 74, 146)"
+	);
+});

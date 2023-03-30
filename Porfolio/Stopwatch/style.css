@@ -5,8 +5,10 @@
 }
 
 :root {
-	--first-color: #fa1406;
+	--first-color: red;
+
 	--second-color: #d2c7be;
+	--third-color: rgb(222, 89, 89);
 }
 
 body {
@@ -39,19 +41,36 @@ body {
 }
 
 .info {
+	display: flex;
+	font-size: 24px;
+}
+
+.info i {
 	position: absolute;
 	top: 6px;
 	right: 14px;
 	padding: 20px;
-	font-size: 24px;
 	color: var(--second-color);
 	cursor: pointer;
 	transition: color 0.3s;
+	/* background-color: #fff; */
 }
 
-.info:hover {
+.info i:hover {
 	color: var(--first-color);
 }
+
+.info .fa-paint-roller {
+	right: 64px;
+}
+
+.info .fa-question {
+	right: 10px;
+}
+
+/* .info:hover {
+	color: var(--first-color);
+} */
 
 h1 {
 	margin-bottom: 20px;
@@ -97,7 +116,8 @@ button {
 
 button:hover,
 button:focus {
-	background-color: var(--first-color);
+	/* background-color: var(---third-color); */
+	/* background-color: blue; */
 	outline: none;
 }
 
@@ -153,7 +173,7 @@ button:focus {
 }
 
 .modal .close:hover {
-	background-color: rgb(226, 36, 26);
+	background-color: var(--third-color);
 }
 
 .modal-animation {
@@ -168,4 +188,66 @@ button:focus {
 	100% {
 		opacity: 1;
 	}
+}
+
+.colors {
+	/* background-color: white; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	position: absolute;
+	top: 100px;
+	right: -10px;
+	width: 64px;
+	height: 220px;
+	transition: transform 0.5s;
+	visibility: hidden;
+}
+
+.color {
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.5s, box-shadow 0.5s;
+}
+.show-colors {
+	transform: translateX(-30px);
+	visibility: visible;
+}
+
+.one {
+	background-color: red;
+	box-shadow: 0 0 7px red;
+}
+.two {
+	background-color: blue;
+	box-shadow: 0 0 7px blue;
+}
+.three {
+	background-color: green;
+	box-shadow: 0 0 7px green;
+}
+.four {
+	background-color: purple;
+	box-shadow: 0 0 7px purple;
+}
+
+.one:hover {
+	background-color: rgb(241, 73, 73);
+	box-shadow: 0 0 7px red;
+}
+.two:hover {
+	background-color: rgb(52, 52, 242);
+	box-shadow: 0 0 7px blue;
+}
+.three:hover {
+	background-color: rgb(64, 163, 64);
+	box-shadow: 0 0 7px green;
+}
+.four:hover {
+	background-color: rgb(146, 74, 146);
+	box-shadow: 0 0 7px purple;
 }
