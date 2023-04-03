@@ -29,7 +29,7 @@
 
 
 	<div class="note-area">
-		<div class="note">
+		<!-- <div class="note">
 			<div class="note-header">
 				<h3 class="note-title">Note #1</h3>
 				<button class="delete-note">
@@ -41,7 +41,7 @@
 				obcaecati quisquam. Ullam, aut. Minus iste iure recusandae saepe officiis voluptas, molestiae
 				accusantium at ipsa consequuntur!
 			</div>
-		</div>
+		</div> -->
 		<!-- <div class="note">
 			<div class="note-header">
 				<h3 class="note-title">Note #2</h3>
@@ -60,7 +60,7 @@
 	<div class="note-panel">
 		<h2>Add note</h2>
 		<label for="category">Select category</label>
-		<select id="category">
+		<select id="category" onchange="selectValue()">
 			<option value="0" disabled selected>- select category </option>
 			<option value="1">Shopping</option>
 			<option value="1">Work</option>
@@ -74,7 +74,7 @@
 
 
 
-		<p class="error">Uzupełnij wszystkie pola!</p>
+		<p class="error">Please fill all required entry fields!</p>
 
 		<div class="panel-buttons">
 			<button class="save icon"><i class="fas fa-save"></i> Zapisz</button>

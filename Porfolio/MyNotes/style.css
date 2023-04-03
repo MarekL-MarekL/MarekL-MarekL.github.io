@@ -15,16 +15,13 @@ body {
 	align-items: centr;
 	padding: 40px;
 	height: 120px;
-	/* border: 1px solid black; */
 }
 
 .menu button,
 .note-panel .save,
 .note-panel .cancel {
 	padding: 12px 25px;
-	/* margin: 12px 250px; */
 	background: none;
-
 	border: 1px solid grey;
 	border-radius: 6px;
 	cursor: pointer;
@@ -48,7 +45,6 @@ body {
 	margin-right: 20px;
 }
 .note-area {
-	/* background-color: rgb(242, 255, 0); */
 	display: flex;
 	align-items: start;
 	flex-wrap: wrap;
@@ -58,7 +54,7 @@ body {
 .note {
 	margin: 40px 20px;
 	width: 240px;
-	background-color: rgb(255, 243, 0);
+	background-color: rgb(243, 230, 171);
 	border: 1px solid black;
 }
 
@@ -75,21 +71,15 @@ body {
 	font-size: 20px;
 	border: none;
 	cursor: pointer;
-
-	/* margin-top: 20px; */
-	/* display: block;
-	margin: 0 auto; */
 }
 
 .note-body {
-	/* background-color: blue; */
 	padding: 15px 15px;
 	font-size: 13px;
 }
 
 .note-panel {
 	display: none;
-	/* display: flex; */
 	justify-content: center;
 	background-color: rgb(230, 236, 236);
 	align-items: center;
@@ -99,12 +89,9 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 40px 20px;
-	/* margin: 50px 50px; */
 	width: 650px;
 	box-shadow: 24px 21px 41px 54px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
-	/* visibility: hidden; */
-	/* display: flex; */
 }
 
 .note-panel h2 {
@@ -126,7 +113,6 @@ body {
 	font-size: 16px;
 	border-radius: 5px;
 	border: 1px solid rgb(0, 0, 0);
-	/* flex-direction: column; */
 }
 
 .note-panel .error {
@@ -134,249 +120,3 @@ body {
 	color: red;
 	visibility: hidden;
 }
-
-/* * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-:root {
-	--first-color: red;
-
-	--second-color: #d2c7be;
-	--third-color: rgb(222, 89, 89);
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: 100vh;
-	font-family: "Montserrat", sans-serif;
-	background-color: #333;
-}
-
-.wrapper {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 50px;
-	width: 800px;
-
-	background: radial-gradient(
-		circle,
-		rgba(43, 44, 46, 1) 0%,
-		rgba(25, 25, 25, 1) 93%
-	);
-	border-radius: 8px;
-	box-shadow: 5px 5px 10px black;
-	color: #fff;
-}
-
-.info {
-	display: flex;
-	font-size: 24px;
-}
-
-.info i {
-	position: absolute;
-	top: 6px;
-	right: 14px;
-	padding: 20px;
-	color: var(--second-color);
-	cursor: pointer;
-	transition: color 0.3s;
-}
-
-.info i:hover {
-	color: var(--first-color);
-}
-
-.info .fa-paint-roller {
-	right: 64px;
-}
-
-.info .fa-question {
-	right: 10px;
-}
-
-h1 {
-	margin-bottom: 20px;
-	font-size: 60px;
-	font-weight: lighter;
-}
-
-.stopwatch {
-	font-size: 72px;
-	color: var(--first-color);
-}
-
-.time {
-	visibility: hidden;
-	color: var(--second-color);
-	font-size: 22px;
-}
-
-.buttons {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 30px;
-}
-
-button {
-	margin: 10px;
-	padding: 10px 20px;
-	width: 20%;
-	color: #fff;
-	font-size: 22px;
-	background-color: transparent;
-	border: 1px solid var(--first-color);
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
-
-.history {
-	flex-grow: 1;
-	text-transform: uppercase;
-}
-
-button:hover,
-button:focus {
-	outline: none;
-}
-
-.time-list li {
-	display: flex;
-	justify-content: space-between;
-	width: 300px;
-	font-size: 22px;
-	color: var(--second-color);
-}
-
-.time-list span {
-	font-weight: bold;
-}
-
-.modal-shadow {
-	display: none;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.65);
-}
-
-.modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 600px;
-	height: 360px;
-	padding: 30px 60px;
-	border-radius: 15px;
-	background-color: rgb(245, 245, 245);
-}
-
-.modal h3 {
-	font-size: 30px;
-	margin-bottom: 20px;
-}
-
-.modal p {
-	margin-bottom: 10px;
-	margin-left: 20px;
-	font-size: 20px;
-}
-
-.modal .close {
-	display: block;
-	margin: 40px auto 0;
-	width: 200px;
-	background-color: var(--first-color);
-	transition: background-color 0.3s;
-}
-
-.modal .close:hover {
-	background-color: var(--third-color);
-}
-
-.modal-animation {
-	animation: show-modal 0.5s;
-}
-
-@keyframes show-modal {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-.colors {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	position: absolute;
-	top: 100px;
-	right: -10px;
-	width: 64px;
-	height: 220px;
-	transition: transform 0.5s;
-	visibility: hidden;
-}
-
-.color {
-	width: 40px;
-	height: 40px;
-	border: 1px solid black;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: background-color 0.5s, box-shadow 0.5s;
-}
-.show-colors {
-	transform: translateX(-30px);
-	visibility: visible;
-}
-
-.one {
-	background-color: red;
-	box-shadow: 0 0 7px red;
-}
-.two {
-	background-color: blue;
-	box-shadow: 0 0 7px blue;
-}
-.three {
-	background-color: green;
-	box-shadow: 0 0 7px green;
-}
-.four {
-	background-color: purple;
-	box-shadow: 0 0 7px purple;
-}
-
-.one:hover {
-	background-color: rgb(241, 73, 73);
-	box-shadow: 0 0 7px red;
-}
-.two:hover {
-	background-color: rgb(52, 52, 242);
-	box-shadow: 0 0 7px blue;
-}
-.three:hover {
-	background-color: rgb(64, 163, 64);
-	box-shadow: 0 0 7px green;
-}
-.four:hover {
-	background-color: rgb(146, 74, 146);
-	box-shadow: 0 0 7px purple;
-} */
