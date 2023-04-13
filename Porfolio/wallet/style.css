@@ -173,15 +173,15 @@ h2.title {
 }
 
 .color-buttons .light {
-	background-color: var(--first-color);
+	background-color: white;
 	border: 5px solid var(--border-color);
-	color: var(--second-color);
+	color: black;
 }
 
 .color-buttons .dark {
-	background-color: var(--second-color);
+	background-color: black;
 	border: 5px solid var(--border-color);
-	color: var(--first-color);
+	color: white;
 }
 
 .add-transaction-panel {
