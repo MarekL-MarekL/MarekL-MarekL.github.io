@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exchange Rate
+
+	</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a251b97601.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<i class="fa-solid fa-wallet"></i>Wallet
+		</h1>
+		<p>Money Manager Expense & Budget</p>
+	</header>
+
+	<main>
+		<section class="transactions">
+			<h2 class="title">Transaction list</h2>
+
+			<div class="transaction-list">
+				<div class="income-area">
+					<h3>Income:</h3>
+
+				</div>
+
+				<div class="expenses-area">
+					<h3>Expenses:</h3>
+
+				</div>
+
+			</div>
+
+		</section>
+		<section class="options">
+
+			<div>
+				<h2 class="title">Available funds:</h2>
+				<p class="available-money">0 SEK</p>
+
+			</div>
+
+			<div class="controls">
+				<button class="add-transaction"><i class="fas fa-solid fa-plus"></i>Add transaction</button>
+				<button class="delete-all">
+					<i class="fa-solid fa-trash"></i>Delete all
+				</button>
+			</div>
+
+			<div class="style-selection">
+				<h2 class="title">Choose style:</h2>
+				<div class="color-buttons">
+					<button class="light">light</button>
+					<button class="dark">dark</button>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+
+	<div class="add-transaction-panel">
+		<h2 class="title">Add new transaction</h2>
+		<label for="name">Name:</label>
+		<small>(write transaction name)</small>
+		<input type="text" id="name">
+
+		<label for="amount">Amount:</label>
+		<small>(transaction amount, if you spend write amount with minus)</small>
+		<input type="number" id="amount">
+
+		<label for="category">Choose category</label>
+		<small>( [+] mean income, [-] mean spending)</small>
+		<select id="category" onchange="selectCategory()">
+			<option value="none" selected disabled></option>
+			<option value="income">[+] Income</option>
+			<option value="shopping">[-] Shopping</option>
+			<option value="food">[-] Food</option>
+			<option value="cinema">[-] Cinema</option>
+		</select>
+		<div class="panel-buttons">
+			<button class="save"><i class="fa-solid fa-floppy-disk"></i>Save</button>
+			<button class="cancel"><i class="fa-regular fa-rectangle-xmark"></i>Cancel</button>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
